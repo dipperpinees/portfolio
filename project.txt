@@ -1,0 +1,11 @@
+1. navigation
+2. picture
+3. about-me
+	1.introduce-section
+	2.skills-section
+4. buy-section
+5. contect-section
+6. footer
+	1.info
+	2.blog-posts
+	3.popular-tags
