@@ -12,24 +12,32 @@
 <body>
     <div id="main">
         <!--Navigation-->
+        <div class="mobile-overlay"></div>
+        <div class="img-clicked">    
+            <img src="./assets/img/boy.jpg" alt="" class="img-zoom">
+            <p class="img-slogan">A boy surrounded by beautiful nature</p>
+            <i class="ti-close exit-btn"></i>
+        </div>
         <div id="nav">
             <h2>SOME<br>NAME</h2>
             <ul class="subnav">
+                <li class = "close">CLOSE</li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#aboutme">ABOUT ME</a></li>
                 <li><a href="#contact-me">CONTACT</a></li>
             </ul>
+
         </div>
 
         <div class="topnav">
             <h2>SOME NAME</h2>
-            <a href="" class="ti-menu menu-btn"></a>
+            <i class="ti-menu menu-btn"></i>
         </div>
 
         <div id="container">
             <!--Begin: Image-->
             <div id="portfolio" class="image-section">
-                <div class="row-image">
+                <div class="row-image mt84">
                     <div class="img-section"><img src="./assets/img/natureboy.jpg" alt=""></div>
                     <div class="img-section"><img src="./assets/img/boy.jpg" alt=""></div>
                     <div class="img-section"><img src="./assets/img/girl.jpg" alt=""></div>
@@ -212,5 +220,6 @@
             <!--End: Footer-->
         </div>
     </div>
+    <script src = './main.js'> </script>
 </body>
 </html>

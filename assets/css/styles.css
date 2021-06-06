@@ -9,6 +9,26 @@ html {
     scroll-behavior: smooth; /*hieu ung cuon trang */
 }
 
+@keyframes animateleft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animatezoom {
+    0% {
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .pd-18{
     padding: 18px 4px!important;
 }
@@ -20,8 +40,48 @@ html {
 #main {
 }
 
+.img-clicked {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: black;
+    z-index: 4;
+    overflow: auto;
+}
+
+.exit-btn {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    font-size: 8px;
+    padding: 25px 18px;
+    cursor: pointer;
+}
+
+.img-zoom {
+    display: block;
+    margin: auto;
+    animation: animatezoom 0.6s;
+}
+
+.img-slogan {
+    color: white;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 64px;
+    font-size: 15px;
+    animation: animatezoom 0.6s;
+
+}
+
 #nav {
     position: fixed;
+    top: 0px;
     width: 300px;
     height: 100%;
     text-align: center;
@@ -35,6 +95,18 @@ html {
     font-weight: 400;
 }
 
+.mobile-overlay{
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.close,
 .subnav a {
     color: #757575;
     text-decoration: none;
@@ -42,6 +114,11 @@ html {
     display: inline-block;
     font-size: 15px;
     width: 100%;
+}
+
+.close {
+    cursor: pointer;
+    display: none;
 }
 
 .subnav li {
@@ -58,7 +135,7 @@ html {
     top: 0px;
     background-color: #fff;
     width: 100%;
-    height: 84px;
+    background-color: rgba(0,0,0,0);
     z-index: 1;
     display: none;
 }
@@ -83,6 +160,7 @@ html {
     transform: translateY(-50%);
     padding: 15px 15px;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 #container {
@@ -110,6 +188,7 @@ html {
 
 .img-section img {
     width: 100%;
+    cursor: pointer;
 }
 
 .number-bar {
@@ -381,6 +460,7 @@ html {
     width: 50px;
     margin: 0px 16px;
     opacity: 0.6;
+    cursor: pointer;
 }
 
 .blog-image:hover {
@@ -423,5 +503,5 @@ html {
     display: inline-block;
 }
 
-
 /* FOOTER */
+

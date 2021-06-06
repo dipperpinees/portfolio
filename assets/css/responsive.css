@@ -1,35 +1,27 @@
 /* Pc */
 @media (min-width: 1024px){
-
+    .img-zoom {
+        height: 80%;
+        padding-top: 64px;
+    }
 }
 
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 740px) and (max-width: 1023px) {
     #nav{
         display: none;
+        background-color: white;
+        z-index: 3;
+        animation: animateleft 0.4s;
     }
-    #container{
-        margin-left: 0px;
-    }
-    .image-section {
-        margin-top: 84px;
-    }
-    .topnav {
+    .close {
         display: block;
     }
-    
-}
-
-/* Mobile */
-@media (max-width: 739px) {
-    #nav{
-        display: none;
-    }
     #container{
         margin-left: 0px;
     }
-    .row-image {
-        flex-direction: column;
+    .mt84{
+        margin-top: 84px;
     }
     .img-section{
         width: 100%;
@@ -40,7 +32,85 @@
     .about-me {
         width: 92%;
     }
+    .img-zoom {
+        width: 80%;
+        padding-top: 64px;
+    }
+    .contact-container{
+        width: 100%;
+    }
 
+    .contact-section {
+        width: 92%;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .download-resume {
+        width: 100%;
+    }
+    
+    .charge-section {
+        flex-direction: column;
+    }
+
+    .row-charge {
+        margin-bottom: 16px;
+    }
+    #footer{
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%
+    }
+
+    .blog-post {
+        width: 100%
+    }
+    
+    .popular-tag{
+        width: 100%
+    }
+    
+}
+
+
+/* Mobile */
+@media (max-width: 739px){
+    #nav{
+        display: none;
+        background-color: white;
+        z-index: 3;
+        animation: animateleft 0.4s;
+    }
+    .close {
+        display: block;
+    }
+    #container{
+        margin-left: 0px;
+    }
+    .row-image {
+        flex-direction: column;
+    }
+    .mt84{
+        margin-top: 84px;
+    }
+    .img-section{
+        width: 100%;
+    }
+    .about-me-container {
+        width: 100%;
+    }
+    .about-me {
+        width: 92%;
+    }
+    .img-zoom {
+        width: 80%;
+        padding-top: 64px;
+    }
     .contact-container{
         width: 100%;
     }
@@ -80,4 +150,3 @@
         width: 100%
     }
 }
-
