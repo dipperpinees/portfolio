@@ -135,7 +135,7 @@ html {
     top: 0px;
     background-color: #fff;
     width: 100%;
-    background-color: rgba(0,0,0,0);
+    background-color: white;
     z-index: 1;
     display: none;
 }
